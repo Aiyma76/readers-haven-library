@@ -503,3 +503,56 @@ img {
     }
 }
 
+
+/* =========================================
+   13. COLLECTIONS PAGE STYLING
+   ========================================= */
+
+
+
+#book-categories .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Book category headings */
+
+#book-categories .info-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+/* Featured books heading */
+
+#book-categories .info-card h4 {
+    color: var(--primary-dark);
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Featured book lists */
+
+#book-categories .info-card ul {
+    padding-left: 20px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+#book-categories .info-card li {
+    margin-bottom: 9px;
+    line-height: 1.6;
+}
+
+/* Responsive design for Collections page */
+
+@media (max-width: 650px) {
+
+    #book-categories .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #book-categories .info-card {
+        padding: 23px;
+    }
+
+}
