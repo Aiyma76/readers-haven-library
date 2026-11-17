@@ -502,4 +502,40 @@ img {
         gap: 13px;
     }
 }
+/*Member2-CSS*/
+.mem-intro { text-align: center; padding: 1.5rem 1rem; }
 
+.mem-plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  padding: 1rem;
+}
+
+.mem-card {
+  border: 1px solid #d0d7de;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  background: #ffffff;
+}
+
+.mem-fee { font-weight: bold; font-size: 1.1rem; }
+
+.mem-compare { padding: 1rem; }
+.mem-table-wrap { overflow-x: auto; }
+.mem-table { width: 100%; border-collapse: collapse; }
+.mem-table th, .mem-table td {
+  border: 1px solid #d0d7de;
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .mem-plans { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .mem-plans { grid-template-columns: 1fr; }
+  .mem-table th, .mem-table td { padding: 0.4rem 0.5rem; font-size: 0.9rem; }
+}
+/*CSS-Added
