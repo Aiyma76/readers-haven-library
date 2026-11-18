@@ -1,167 +1,267 @@
 
-/* =========================================
-   MEMBER 3 - DIGITAL SERVICES PAGE
-   ========================================= */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Services | Readers' Haven</title>
 
-/* Services Hero */
+    <!-- Shared CSS file -->
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
 
-.services-hero {
-    background: linear-gradient(120deg, #e9efe8, #f5eee1);
-    padding: 75px 0;
-    text-align: center;
-}
+<body>
 
-.services-hero-content {
-    max-width: 800px;
-}
+    <!-- Header and Navigation -->
+    <header class="site-header">
+        <div class="container header-content">
 
-.services-hero h1 {
-    color: var(--primary-dark);
-    font-size: clamp(35px, 5vw, 52px);
-    line-height: 1.2;
-    margin-bottom: 20px;
-}
+            <a href="index.html" class="logo">
+                <span class="logo-icon">RH</span>
+                Readers' Haven
+            </a>
 
-.services-hero-content > p:not(.eyebrow) {
-    color: var(--muted);
-    font-size: 17px;
-    margin-bottom: 25px;
-}
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="collections.html">Collections</a>
+                <a href="membership.html">Membership</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="contact.html">Contact</a>
+            </nav>
 
-
-/* Services Cards */
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.service-card {
-    background: var(--white);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 28px;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-6px);
-}
-
-.service-icon {
-    font-size: 42px;
-    margin-bottom: 15px;
-}
-
-.service-card h3 {
-    color: var(--primary);
-    font-size: 20px;
-    margin-bottom: 12px;
-}
-
-.service-card p {
-    color: var(--muted);
-    font-size: 14px;
-    margin-bottom: 18px;
-}
-
-.service-card h4 {
-    color: var(--primary-dark);
-    font-size: 15px;
-    margin-bottom: 8px;
-}
-
-.service-card ol {
-    padding-left: 20px;
-    color: var(--muted);
-    font-size: 13px;
-    margin-bottom: 20px;
-}
-
-.service-card li {
-    margin-bottom: 7px;
-}
-
-.service-time {
-    display: inline-block;
-    background: #e9efe8;
-    color: var(--primary);
-    padding: 7px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 700;
-}
+        </div>
+    </header>
 
 
-/* Benefits Section */
+    <!-- Hero Section -->
+    <section class="services-hero">
+        <div class="container services-hero-content">
 
-.services-benefits {
-    background: #f0f2ec;
-    padding: 75px 0;
-}
+            <p class="eyebrow">EXPLORE OUR DIGITAL WORLD</p>
 
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
+            <h1>Digital Services for Everyone</h1>
 
-.benefit-item {
-    background: var(--white);
-    border-radius: 12px;
-    padding: 30px;
-    text-align: center;
-    box-shadow: var(--shadow);
-}
+            <p>
+                Discover convenient digital facilities at Readers' Haven.
+                Access books, search our catalogue, reserve study spaces,
+                and enjoy technology that makes learning easier.
+            </p>
 
-.benefit-item span {
-    font-size: 38px;
-}
+            <a href="#our-services" class="btn btn-primary">
+                Explore Services
+            </a>
 
-.benefit-item h3 {
-    color: var(--primary);
-    margin: 12px 0;
-}
-
-.benefit-item p {
-    color: var(--muted);
-    font-size: 14px;
-}
+        </div>
+    </section>
 
 
-/* Responsive Design - Member 3 */
+    <!-- Services Section -->
+    <section class="section" id="our-services">
+        <div class="container">
 
-@media (max-width: 900px) {
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+            <div class="section-heading">
+                <p class="eyebrow">WHAT WE OFFER</p>
+                <h2>Our Digital Services</h2>
+                <p>
+                    We provide modern facilities to make reading,
+                    studying, and accessing information easier.
+                </p>
+            </div>
 
-@media (max-width: 600px) {
-    .services-hero {
-        padding: 50px 0;
-    }
 
-    .services-hero h1 {
-        font-size: 34px;
-    }
+            <div class="services-grid">
 
-    .services-hero-content > p:not(.eyebrow) {
-        font-size: 15px;
-    }
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">🔎</div>
+                    <h3>Online Catalogue</h3>
 
-    .services-grid,
-    .benefits-grid {
-        grid-template-columns: 1fr;
-    }
+                    <p>
+                        Search for books, authors, and available
+                        collections through our online catalogue.
+                    </p>
 
-    .service-card {
-        padding: 22px;
-    }
+                    <h4>How to Use:</h4>
+                    <ol>
+                        <li>Open the library catalogue.</li>
+                        <li>Enter a book title or author.</li>
+                        <li>Check the availability of the book.</li>
+                    </ol>
 
-    .services-benefits {
-        padding: 50px 0;
-    }
-}
+                    <span class="service-time">Available 24/7</span>
+                </div>
+
+
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">📚</div>
+                    <h3>E-Books</h3>
+
+                    <p>
+                        Read digital books and educational
+                        materials using your computer, tablet,
+                        or smartphone.
+                    </p>
+
+                    <h4>How to Use:</h4>
+                    <ol>
+                        <li>Log in with your library membership.</li>
+                        <li>Browse the digital collection.</li>
+                        <li>Select and read an available e-book.</li>
+                    </ol>
+
+                    <span class="service-time">Available 24/7</span>
+                </div>
+
+
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">🪑</div>
+                    <h3>Study Room Booking</h3>
+
+                    <p>
+                        Reserve a quiet study room for individual
+                        learning, research, or group discussions.
+                    </p>
+
+                    <h4>How to Use:</h4>
+                    <ol>
+                        <li>Visit the library booking desk.</li>
+                        <li>Select an available study room.</li>
+                        <li>Confirm your preferred time slot.</li>
+                    </ol>
+
+                    <span class="service-time">
+                        During library hours
+                    </span>
+                </div>
+
+
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">🖨️</div>
+                    <h3>Printing & Scanning</h3>
+
+                    <p>
+                        Print assignments, documents, and
+                        educational materials or scan important
+                        papers.
+                    </p>
+
+                    <h4>How to Use:</h4>
+                    <ol>
+                        <li>Visit the printing service desk.</li>
+                        <li>Submit your document.</li>
+                        <li>Collect your printed or scanned copy.</li>
+                    </ol>
+
+                    <span class="service-time">
+                        During library hours
+                    </span>
+                </div>
+
+
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">📶</div>
+                    <h3>Free Wi-Fi</h3>
+
+                    <p>
+                        Enjoy internet access for online research,
+                        educational resources, and academic work.
+                    </p>
+
+                    <h4>How to Use:</h4>
+                    <ol>
+                        <li>Enable Wi-Fi on your device.</li>
+                        <li>Select the library Wi-Fi network.</li>
+                        <li>Follow the connection instructions.</li>
+                    </ol>
+
+                    <span class="service-time">
+                        During library hours
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Benefits Section -->
+    <section class="services-benefits">
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="eyebrow">WHY CHOOSE US?</p>
+                <h2>Technology Meets Learning</h2>
+                <p>
+                    Our digital facilities help members save time,
+                    improve learning, and access information easily.
+                </p>
+            </div>
+
+            <div class="benefits-grid">
+
+                <div class="benefit-item">
+                    <span>⏰</span>
+                    <h3>Convenience</h3>
+                    <p>Access selected digital resources anytime.</p>
+                </div>
+
+                <div class="benefit-item">
+                    <span>🎓</span>
+                    <h3>Better Learning</h3>
+                    <p>Find useful resources for study and research.</p>
+                </div>
+
+                <div class="benefit-item">
+                    <span>💻</span>
+                    <h3>Easy Access</h3>
+                    <p>Use modern facilities with your devices.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div>
+                    <a href="index.html" class="footer-logo">
+                        Readers' Haven
+                    </a>
+
+                    <p>
+                        Your gateway to knowledge, learning,
+                        and digital resources.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="collections.html">Collections</a>
+                    <a href="membership.html">Membership</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>
+                    &copy; 2026 Readers' Haven Public Library.
+                    All Rights Reserved.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
