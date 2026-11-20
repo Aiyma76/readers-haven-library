@@ -1,121 +1,440 @@
+
+/* ===== GENERAL STYLING ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.service-card:hover {
-    transform: translateY(-6px);
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #263238;
+    background: #f8faf9;
 }
 
-.service-icon {
-    font-size: 42px;
-    margin-bottom: 15px;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-.service-card h3 {
-    color: var(--primary);
-    font-size: 20px;
+.container {
+    width: 90%;
+    max-width: 1150px;
+    margin: auto;
+}
+
+p {
     margin-bottom: 12px;
 }
 
-.service-card p {
-    color: var(--muted);
-    font-size: 14px;
-    margin-bottom: 18px;
+h1, h2, h3 {
+    line-height: 1.3;
+    color: #183d38;
 }
 
-.service-card h4 {
-    color: var(--primary-dark);
-    font-size: 15px;
-    margin-bottom: 8px;
+/* ===== HEADER & NAVIGATION ===== */
+.site-header,
+header {
+    background: #173f3a;
+    color: white;
+    padding: 18px 0;
 }
 
-.service-card ol {
-    padding-left: 20px;
-    color: var(--muted);
-    font-size: 13px;
-    margin-bottom: 20px;
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-.service-card li {
-    margin-bottom: 7px;
+.logo, .footer-logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
 }
 
-.service-time {
-    display: inline-block;
-    background: #e9efe8;
-    color: var(--primary);
-    padding: 7px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 700;
+.logo-icon {
+    background: #d9a441;
+    color: #173f3a;
+    padding: 7px;
+    border-radius: 6px;
+    margin-right: 8px;
 }
 
+.main-nav, nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
 
-/* Benefits Section */
+.main-nav a, nav a {
+    color: white;
+    font-weight: bold;
+}
 
-.services-benefits {
-    background: #f0f2ec;
+.main-nav a:hover,
+.main-nav a.active,
+nav a:hover {
+    color: #e5bd68;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    background: #e8f1ed;
     padding: 75px 0;
 }
 
-.benefits-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-.benefit-item {
-    background: var(--white);
+.hero-text {
+    flex: 1;
+    min-width: 260px;
+}
+
+.hero-text h1 {
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+.eyebrow {
+    color: #b17b24;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero-description {
+    font-size: 17px;
+    color: #52645e;
+}
+
+.hero-card {
+    flex: 0 1 320px;
+    background: white;
+    padding: 35px;
     border-radius: 12px;
-    padding: 30px;
     text-align: center;
-    box-shadow: var(--shadow);
+    box-shadow: 0 5px 20px #00000012;
 }
 
-.benefit-item span {
-    font-size: 38px;
+.book-symbol {
+    font-size: 55px;
+    margin-bottom: 15px;
 }
 
-.benefit-item h3 {
-    color: var(--primary);
+/* ===== BUTTONS ===== */
+.hero-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn-primary {
+    background: #205c50;
+    color: white;
+}
+
+.btn-outline {
+    border: 2px solid #205c50;
+    color: #205c50;
+}
+
+.btn-light {
+    background: white;
+    color: #205c50;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* ===== GENERAL SECTIONS ===== */
+.section {
+    padding: 65px 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-content > div {
+    flex: 1;
+    min-width: 250px;
+}
+
+.about-text {
+    color: #586761;
+}
+
+/* ===== CARDS ===== */
+.highlights-section {
+    background: #f0f5f2;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.info-card, .visit-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px #00000010;
+}
+
+.info-card h3, .visit-card h3 {
     margin: 12px 0;
 }
 
-.benefit-item p {
-    color: var(--muted);
-    font-size: 14px;
+.info-card p, .visit-card p {
+    color: #596963;
 }
 
-
-/* Responsive Design - Member 3 */
-
-@media (max-width: 900px) {
-    .services-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.info-card ul {
+    padding-left: 20px;
+    margin-top: 10px;
 }
 
-@media (max-width: 600px) {
-    .services-hero {
-        padding: 50px 0;
+.info-card li {
+    margin-bottom: 7px;
+}
+
+.card-icon {
+    font-size: 32px;
+}
+
+.text-link {
+    color: #287260;
+    font-weight: bold;
+}
+
+/* ===== VISIT SECTION ===== */
+.visit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* ===== MISSION SECTION ===== */
+.mission-section {
+    background: #205c50;
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.mission-content h2 {
+    color: white;
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.mission-content p {
+    max-width: 700px;
+    margin: 12px auto;
+}
+
+.mission-section .eyebrow {
+    color: #f0cc7b;
+}
+
+/* ===== CALL TO ACTION ===== */
+.cta-section {
+    background: #dceae3;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.cta-content h2 {
+    margin-bottom: 12px;
+}
+
+/* ===== MEMBERSHIP PAGE ===== */
+.mem-intro {
+    text-align: center;
+    padding: 55px 20px;
+    background: #e8f1ed;
+}
+
+.mem-intro h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.mem-plans {
+    width: 90%;
+    max-width: 1100px;
+    margin: 45px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
+}
+
+.mem-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px #00000015;
+    border-top: 4px solid #d9a441;
+}
+
+.mem-card h3 {
+    margin-bottom: 12px;
+}
+
+.mem-fee {
+    color: #287260;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.mem-card ul {
+    padding-left: 20px;
+}
+
+.mem-card li {
+    margin-bottom: 10px;
+}
+
+.mem-compare {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto 60px;
+}
+
+.mem-compare h3 {
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.mem-table-wrap {
+    overflow-x: auto;
+}
+
+.mem-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.mem-table th {
+    background: #205c50;
+    color: white;
+}
+
+.mem-table th,
+.mem-table td {
+    padding: 14px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.mem-table tr:nth-child(even) {
+    background: #edf4f0;
+}
+
+/* ===== FOOTER ===== */
+.site-footer,
+footer {
+    background: #173f3a;
+    color: white;
+    padding: 30px 0 15px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: white;
+}
+
+.footer-links a:hover {
+    color: #e5bd68;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #ffffff35;
+    margin-top: 25px;
+    padding-top: 15px;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
     }
 
-    .services-hero h1 {
-        font-size: 34px;
+    .main-nav, nav {
+        justify-content: center;
+        gap: 12px;
     }
 
-    .services-hero-content > p:not(.eyebrow) {
-        font-size: 15px;
+    .hero-content {
+        flex-direction: column;
     }
 
-    .services-grid,
-    .benefits-grid {
-        grid-template-columns: 1fr;
+    .hero-text h1 {
+        font-size: 32px;
     }
 
-    .service-card {
-        padding: 22px;
+    .about-content {
+        flex-direction: column;
     }
 
-    .services-benefits {
-        padding: 50px 0;
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
     }
 }
