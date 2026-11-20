@@ -1,5 +1,121 @@
-body {
-    margin: 0;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+}
+
+.service-icon {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    color: var(--primary);
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.service-card h4 {
+    color: var(--primary-dark);
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.service-card ol {
+    padding-left: 20px;
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.service-card li {
+    margin-bottom: 7px;
+}
+
+.service-time {
+    display: inline-block;
+    background: #e9efe8;
+    color: var(--primary);
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* Benefits Section */
+
+.services-benefits {
+    background: #f0f2ec;
+    padding: 75px 0;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.benefit-item {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+.benefit-item span {
+    font-size: 38px;
+}
+
+.benefit-item h3 {
+    color: var(--primary);
+    margin: 12px 0;
+}
+
+.benefit-item p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+
+/* Responsive Design - Member 3 */
+
+@media (max-width: 900px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .services-hero {
+        padding: 50px 0;
+    }
+
+    .services-hero h1 {
+        font-size: 34px;
+    }
+
+    .services-hero-content > p:not(.eyebrow) {
+        font-size: 15px;
+    }
+
+    .services-grid,
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 22px;
+    }
+
+    .services-benefits {
+        padding: 50px 0;
+    }
 }
